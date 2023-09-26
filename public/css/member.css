@@ -1,0 +1,54 @@
+/* CSS untuk laman member */
+.body-member {
+  text-align: center;
+  padding: 20px;
+}
+
+.member-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.member-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(
+    112,
+    203,
+    207,
+    0.4
+  ); /* Warna latar belakang dengan opacity */
+  padding: 20px; /* Padding di sekitar container */
+  border-radius: 10px; /* Sudut container dengan border radius */
+}
+
+.member-box {
+  width: calc(
+    25% - 20px
+  ); /* Lebar setiap kolom member, dengan jarak 20px antar kolom */
+  padding: 20px;
+  background-color: #ffffff; /* Warna latar belakang box member */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px; /* Jarak antar kotak member */
+  box-sizing: border-box; /* Menghitung padding dan border ke dalam lebar */
+  text-align: center; /* Tengah teks dalam kotak */
+}
+
+.member-photo {
+  width: 100%; /* Lebar gambar member 100% untuk mengisi kotak */
+  height: auto; /* Tinggi otomatis sesuai lebar */
+  border-radius: 10px; /* Sudut gambar member dengan border radius */
+  display: block; /* Untuk memastikan gambar muncul dalam bentuk kotak */
+  margin-bottom: 10px; /* Jarak bawah gambar dari teks */
+}
+
+.member-name {
+  font-weight: bold;
+}
+
+.member-role {
+  font-style: italic;
+}

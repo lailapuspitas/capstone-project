@@ -1,74 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laman Login</title>
-    <link rel="stylesheet" href="../public/css/login.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Index</title>
+    <link rel="stylesheet" href="../public/css/home.css" />
     <link rel="stylesheet" href="../public/css/globalstyle.css" />
-  </head>
-  <body>
-    <div id="login" class="laman-login">
-      <!-- Start Navbar -->
-      <nav class="navbar">
-        <div class="nav-logo">
-          <img src="../public/img/Logo.png" alt="" />
-        </div>
-        <div class="nav-kanan">
-          <a class="home" href="home.html">Home</a>
-          <!-- Dropdown Menu for About Us -->
-          <div class="dropdown">
-            <a class="about" href="#">About Us</a>
-            <div class="dropdown-content">
-              <a href="about-web.html">Health Care</a>
-              <a href="member.html">Member Of Group</a>
-            </div>
-          </div>
-          <!-- Dropdown Menu for Service Facilities -->
-          <div class="dropdown">
-            <a class="fasilitas" href="#">Service Fasilities</a>
-            <div class="dropdown-content">
-              <a href="appointment.html">Appointment</a>
-              <a href="doctor.html">Doctor</a>
-            </div>
-          </div>
-          <button type="submit" class="button">Log In / Sign In</button>
-        </div>
-      </nav>
-      <!-- End Navbar -->
-
-      <!-- Star Banner -->
-      <div id="banner" class="banner"></div>
-      <!-- End Banner -->
-
-      <!-- Start Konten Login -->
-      <div class="header-text">Log In</div>
-      <div class="box-form">
-        <div class="konten-kiri">
-          <div class="form-login">
-            <label class="email" for="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <label class="password" for="password">Password</label>
-            <input type="password" name="password" id="password" />
-            <p class="alert-pass">
-              Enter a password of 8-12 digits, numbers and letters
-            </p>
-            <button type="submit" class="button">Login</button>
-            <div class="create-acc">
-              <p>Don&#39;t have an account yet?</p>
-              <a class="to-create-acc" href="signin.html">Create Account</a>
-            </div>
-          </div>
-        </div>
-        <div class="konten-kanan">
-          <img
-            class="image-container"
-            alt="Login Picture"
-            title="Login Picture"
-            src="../public/img/login-pic.jpg" />
+</head>
+<body>
+    <div class="home" id="home">
+ <!-- Start Navbar -->
+ <nav class="navbar">
+    <div class="nav-logo">
+      <img src="../public/img/Logo.png" alt="" />
+    </div>
+    <div class="nav-kanan">
+      <a class="home" href="home.html">Home</a>
+      <!-- Dropdown Menu for About Us -->
+      <div class="dropdown">
+        <a class="about" href="#">About Us</a>
+        <div class="dropdown-content">
+          <a href="about-web.html">Health Care</a>
+          <a href="member.html">Member Of Group</a>
         </div>
       </div>
-      <!-- End Konten Login -->
+      <!-- Dropdown Menu for Service Facilities -->
+      <div class="dropdown">
+        <a class="fasilitas" href="#">Service Fasilities</a>
+        <div class="dropdown-content">
+          <a href="appointment.html">Appointment</a>
+          <a href="doctor.html">Doctor</a>
+        </div>
+      </div>
+      <button type="submit" class="button">Log In / Sign In</button>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+      <!-- Start Home Body -->
+      <div class="content-body">
+        <section class="banner-home">
+            <img class="banner-pic" src="./img/banner-home.png" alt="Banner Home">
+        </section>
+        <section class="service-home">
+            <div class="service-title">Service Facilities</div>
+            <div class="tabel-service">
+            <div class="serv-home-icon">
+                <div class="left-content">
+                    <img class="service-icon" src="./img/appointment-icon.png" alt="">
+                    <a class="note-icon" href="appointment">Appointment</a>
+                </div>
+                <div class="right-content">
+                    <img class="service-icon" src="./img/doctor icon.png" alt="">
+                    <a class="note-icon" href="doctor">Doctor</a>
+                </div>
+            </div>
+         </div>
+        </section>
+      </div>
+      <!-- End Home Body -->
 
       <!-- Start Footer -->
       <footer class="foot-site">
@@ -85,7 +75,7 @@
             <p class="neck-title">About Us</p>
             <a href="about_app"><p class="body-foot">Health Care</p></a>
             <a href="about_member"><p class="body-foot">Member Of Group</p></a>
-            <p class="neck-title">Service Fasilities</p>
+            <p class="neck-title">Service Facilities</p>
             <a href="appointment"><p class="body-foot">Appointment</p></a>
             <a href="doctor"><p class="body-foot">Doctor</p></a>
           </div>
@@ -130,5 +120,5 @@
       </footer>
       <!-- End Footer -->
     </div>
-  </body>
+</body>
 </html>

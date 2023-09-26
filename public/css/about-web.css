@@ -1,0 +1,46 @@
+/* Start Body About-Web */
+.title-about {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f77a4;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-web-content {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Change to column to stack elements vertically */
+  align-items: center; /* Center-align the content horizontally */
+  text-align: center;
+}
+
+.about-web-application,
+.about-web-facilities {
+  width: 80%; /* Adjust the width of content as needed */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px #2b8e8e40;
+  margin: 10px 0; /* Add margin to separate the content vertically */
+}
+
+.border-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #70cbcf;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #484848;
+  font-family: "Fira Sans", sans-serif;
+}
+/* End Body About-Web */
+
+/* footer */
+.foot-site {
+  margin-top: 60px;
+}
