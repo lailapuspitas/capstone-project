@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Member Of Group</title>
-    <link rel="stylesheet" href="../public/css/member.css" />
+    <title>Laman Appointment</title>
+    <link rel="stylesheet" href="../public/css/appointment.css" />
     <link rel="stylesheet" href="../public/css/globalstyle.css" />
   </head>
   <body>
-    <div class="member" id="member">
-      <!-- Start Navbar -->
+    <div class="appointment-web">
+        <!-- Start Navbar -->
       <nav class="navbar">
         <div class="nav-logo">
           <img src="../public/img/Logo.png" alt="" />
@@ -37,24 +37,43 @@
       </nav>
       <!-- End Navbar -->
 
-      <!-- Start Body Laman Member -->
-      <div class="body-member">
-        <div class="member-title">
-          Member Of Group <br />
-          Health Care - 25
-        </div>
-        <div class="member-container">
-          <div class="member-box">
-            <img id="member-photo" class="member-photo" src="" alt="" />
-            <p id="member-name" class="member-name"></p>
-            <p id="member-role" class="member-role"></p>
-          </div>
+      <div class="title-appointment">
+        Make an Appointment
+      </div>
+
+      <!-- start body appointment -->
+      <div class="appointment-container">
+        <div class="appointment-form">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Name">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" id="email" placeholder="Enter Email">
+          <label for="date">Date</label> 
+          <input type="date" class="form-control" id="date" placeholder="Select Date"> 
+          <label for="time">Time</label>
+          <select class="form-control" id="time">
+            <option value="" disabled selected>Select Time</option>
+            <option value="08:00 AM">08:00 AM</option>
+            <option value="10:00 AM">10:00 AM</option>
+            <option value="03:00 PM">03:00 PM</option>
+            <option value="05:00 PM">05:00 PM</option>
+            <option value="07:00 PM">07:00 PM</option>
+          </select>
+          <label for="categories">Categories</label> 
+          <select class="form-control" id="service" title="symptom-categories">
+            <option value="" disabled selected>Symptom Categories</option>
+            <option value="ear">Ear</option>
+            <option value="nose">Nose</option>
+            <option value="throat">Throat</option>
+          </select>
+          <label for="complaint">Medical Complaint</label>
+          <input type="text" name="complaint" id="complaint">
+          <button class="submit-appointment" type="submit">Submit</button>
         </div>
       </div>
-      <!-- End Body Laman Member -->
 
-      <!-- Start Footer -->
-      <!-- <footer class="foot-site">
+       <!-- Start Footer -->
+       <footer class="foot-site">
         <div class="foot-container">
           <div class="foot-logo">
             <img
@@ -68,7 +87,7 @@
             <p class="neck-title">About Us</p>
             <a href="about_app"><p class="body-foot">Health Care</p></a>
             <a href="about_member"><p class="body-foot">Member Of Group</p></a>
-            <p class="neck-title">Service Fasilities</p>
+            <p class="neck-title">Service Facilities</p>
             <a href="appointment"><p class="body-foot">Appointment</p></a>
             <a href="doctor"><p class="body-foot">Doctor</p></a>
           </div>
@@ -110,8 +129,11 @@
             </div>
           </div>
         </div>
-      </footer> -->
+      </footer>
       <!-- End Footer -->
     </div>
+
+    <!-- Script JS -->
+    <script src="./js-frontend/appointment.js"></script>
   </body>
 </html>

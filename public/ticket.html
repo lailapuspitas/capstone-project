@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Member Of Group</title>
-    <link rel="stylesheet" href="../public/css/member.css" />
+    <title>Laman Appointment Ticket</title>
+    <link rel="stylesheet" href="../public/css/ticket.css" />
     <link rel="stylesheet" href="../public/css/globalstyle.css" />
   </head>
   <body>
-    <div class="member" id="member">
-      <!-- Start Navbar -->
+    <div class="appointment-ticket">
+        <!-- Start Navbar -->
       <nav class="navbar">
         <div class="nav-logo">
           <img src="../public/img/Logo.png" alt="" />
@@ -37,24 +37,34 @@
       </nav>
       <!-- End Navbar -->
 
-      <!-- Start Body Laman Member -->
-      <div class="body-member">
-        <div class="member-title">
-          Member Of Group <br />
-          Health Care - 25
-        </div>
-        <div class="member-container">
-          <div class="member-box">
-            <img id="member-photo" class="member-photo" src="" alt="" />
-            <p id="member-name" class="member-name"></p>
-            <p id="member-role" class="member-role"></p>
-          </div>
+      <div class="title-appointment-ticket">
+        Appointment Ticket
+      </div>
+
+      <!-- start body appointment -->
+      <div class="appointment-ticket-container">
+        <div class="appointment-ticket-form">
+          <label for="name">Name :</label>
+          <div class="hasil" id="hasil-name"></div>
+          <label for="email">Email :</label>
+          <div class="hasil" id="hasil-email"></div>
+          <label for="date">Date :</label> 
+          <div class="hasil" id="hasil-date"></div>
+          <label for="time">Time :</label>
+          <div class="hasil" id="hasil-time"></div>
+          <label for="categories">Categories :</label> 
+          <div class="hasil" id="hasil-symptom"></div>
+          <label for="complaint">Medical Complaint :</label>
+          <div class="hasil" id="hasil-medcomplaint"></div>
         </div>
       </div>
-      <!-- End Body Laman Member -->
 
-      <!-- Start Footer -->
-      <!-- <footer class="foot-site">
+      <p class="note">*NOTE</p>
+      <div class="note-ticket">After this page appears, screenshot this page as proof <br>
+        that you have registered for an appointment with a doctor</div>
+
+       <!-- Start Footer -->
+       <footer class="foot-site">
         <div class="foot-container">
           <div class="foot-logo">
             <img
@@ -68,7 +78,7 @@
             <p class="neck-title">About Us</p>
             <a href="about_app"><p class="body-foot">Health Care</p></a>
             <a href="about_member"><p class="body-foot">Member Of Group</p></a>
-            <p class="neck-title">Service Fasilities</p>
+            <p class="neck-title">Service Facilities</p>
             <a href="appointment"><p class="body-foot">Appointment</p></a>
             <a href="doctor"><p class="body-foot">Doctor</p></a>
           </div>
@@ -110,8 +120,11 @@
             </div>
           </div>
         </div>
-      </footer> -->
+      </footer>
       <!-- End Footer -->
     </div>
+
+    <!-- Script JS -->
+    <script src="./js-frontend/appointment.js"></script>
   </body>
 </html>

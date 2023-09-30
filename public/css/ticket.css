@@ -1,0 +1,53 @@
+.title-appointment-ticket {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f77a4;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.appointment-ticket-container {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #48484859;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.4);
+}
+
+.appointment-ticket-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-ticket-form label {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #484848ea;
+}
+
+.hasil {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f77a4;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.note-ticket {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #484848ea;
+  text-align: center;
+  margin-bottom: 50px;
+}
