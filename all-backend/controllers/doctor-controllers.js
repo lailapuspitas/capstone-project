@@ -18,11 +18,18 @@ const doctorService = require("../services/doctor-services");
 
 // menggunakan arrow function
 const getAllDoctor = async (req, res) => {
-  const doctor = await doctorService.getAllDoctor();
-  res.status(200).json({
-    message: "Sukses dalam mengambil data!",
-    data: doctor,
-  });
+  try {
+    const doctors = await doctorService.getAllDoctor();
+    res.status(200).json({
+      message: "Success in retrieving data!",
+      data: doctors,
+    });
+  } catch (error) {
+    console.error("Error fetching data: " + error);
+    res.status(500).json({
+      message: "Error fetching data",
+    });
+  }
 };
 
 module.exports = { getAllDoctor };
