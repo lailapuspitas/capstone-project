@@ -1,55 +1,65 @@
-.content-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.banner-home {
-  max-width: 100%; /* Maksimum lebar untuk banner */
-  height: auto; /* Lebar otomatis sesuai dengan aspek gambar */
-}
-
 .service-home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  margin-top: 20px; /* Sesuaikan dengan margin yang Anda inginkan */
+  padding: 40px 0;
+  background-color: #f5f5f5;
 }
 
 .service-title {
-  font-size: 24px; /* Sesuaikan dengan ukuran teks yang Anda inginkan */
-  font-weight: bold;
-  margin-bottom: 20px; /* Sesuaikan dengan margin yang Anda inginkan */
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f77a4;
+  margin-bottom: 20px;
 }
 
 .tabel-service {
   display: flex;
-  justify-content: space-between; /* Mengatur ruang di antara elemen-elemen tabel */
-  max-width: 600px; /* Sesuaikan dengan lebar maksimum yang Anda inginkan */
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.left-content,
+.serv-home-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.left-content {
+  margin-right: 30px;
+}
+
 .right-content {
-  flex-basis: 48%; /* Mengatur lebar masing-masing kolom */
-  text-align: center;
+  margin-left: 30px;
 }
 
-/* CSS untuk ikon dan teks di dalam kolom */
+.left-content a,
+.right-content a {
+  text-decoration: none;
+}
+
+.service-item {
+  text-align: center;
+  margin: 0 20px;
+  padding: 20px;
+  flex: 1;
+  padding: 20px;
+}
+
 .service-icon {
-  width: 60px; /* Sesuaikan dengan ukuran ikon */
-  height: 60px; /* Sesuaikan dengan ukuran ikon */
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
 }
 
 .note-icon {
+  font-size: 18px;
+  font-weight: 600;
+  color: #70cbcf;
   text-decoration: none;
-  color: #484848;
-  font-size: 14px; /* Sesuaikan dengan ukuran teks yang Anda inginkan */
-  margin-top: 10px; /* Sesuaikan dengan margin yang Anda inginkan */
+  display: block;
 }
 
-/* footer */
-.foot-site {
-  margin-top: 50px;
+.note-icon:hover {
+  color: #1f77a4;
 }
