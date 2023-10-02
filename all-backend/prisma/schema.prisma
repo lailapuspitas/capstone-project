@@ -30,8 +30,8 @@ model Appointment {
   id         Int      @id @default(autoincrement())
   name       String
   email      String
-  date       DateTime
-  time       String
+  date       DateTime  @db.Date
+  time       String      
   categories String
   complaint  String
 }

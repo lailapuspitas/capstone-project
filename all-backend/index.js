@@ -9,7 +9,7 @@ const express = require("express");
 const { logger } = require("./middleware/logger");
 const { memberRoute } = require("./routes/member-routes");
 const { doctorRoute } = require("./routes/doctor-routes");
-// const { appointmentRoute } = require("./routes/appointment-routes");
+const { appointmentRoute } = require("./routes/appointment-routes");
 
 const app = express();
 const cors = require("cors");
@@ -22,6 +22,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/member", memberRoute);
 app.get("/doctor", doctorRoute);
+app.get("/appointment", appointmentRoute);
+app.post("/appointment", appointmentRoute);
 
 // // Routes
 // const apiRouter = express.Router();
@@ -36,8 +38,6 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ error: "Internal server error" });
 });
-
-// app.get("/appointment", appointmentRoute);
 
 app.listen(port, () => {
   console.log(`server is running on http://localhost:${port}`);
