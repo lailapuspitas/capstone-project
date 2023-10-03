@@ -51,3 +51,67 @@
   border-radius: 10px;
   cursor: pointer;
 }
+
+#error-message {
+  color: red;
+}
+
+/* CSS untuk tampilan seluler (320px hingga 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+  .title-appointment {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  .appointment-container {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .appointment-form label {
+    font-size: 16px;
+  }
+
+  .appointment-form input,
+  .appointment-form select {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .submit-appointment {
+    height: 35px;
+    width: 90px;
+    margin-top: 15px;
+  }
+}
+
+/* CSS untuk tampilan tablet (768px hingga 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title-appointment {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  .appointment-container {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .appointment-form label {
+    font-size: 16px;
+  }
+
+  .appointment-form input,
+  .appointment-form select {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .submit-appointment {
+    height: 35px;
+    width: 90px;
+    margin-top: 15px;
+  }
+}

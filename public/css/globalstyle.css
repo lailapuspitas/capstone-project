@@ -185,3 +185,107 @@ body {
   padding-top: 110px;
 }
 /* End Footer */
+
+/* CSS untuk tampilan seluler (hp) */
+@media (max-width: 767px) {
+  .navbar {
+    height: 60px;
+  }
+
+  .nav-logo img {
+    width: 50px;
+    height: 45px;
+    top: 12px;
+    left: 15px;
+  }
+
+  .nav-kanan {
+    right: 15px;
+  }
+
+  .nav-kanan a {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .dropdown-content {
+    min-width: 160px;
+  }
+
+  .dropdown-content a {
+    padding: 8px 16px;
+  }
+
+  .foot-site {
+    padding: 15px 0;
+  }
+
+  .head-title {
+    font-size: 18px;
+  }
+
+  .neck-title {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .body-foot {
+    font-size: 14px;
+  }
+
+  .icon-sosmed a {
+    font-size: 16px;
+  }
+}
+
+/* CSS untuk tampilan tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .nav-logo img {
+    width: 55px;
+    height: 50px;
+    top: 15px;
+    left: 25px;
+  }
+
+  .nav-kanan {
+    right: 25px;
+  }
+
+  .nav-kanan a {
+    font-size: 16px;
+    margin-right: 25px;
+  }
+
+  .dropdown-content {
+    min-width: 180px;
+  }
+
+  .dropdown-content a {
+    padding: 10px 20px;
+  }
+
+  .foot-site {
+    padding: 20px 0;
+  }
+
+  .head-title {
+    font-size: 18px;
+  }
+
+  .neck-title {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .body-foot {
+    font-size: 14px;
+  }
+
+  .icon-sosmed a {
+    font-size: 16px;
+  }
+}

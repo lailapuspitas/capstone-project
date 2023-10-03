@@ -40,6 +40,7 @@ const createAppointment = async (req, res) => {
     );
     res.status(201).json({
       message: "appointment created",
+      data: createdAppointment,
     });
   } catch (error) {
     console.error("Error fetching data: " + error);

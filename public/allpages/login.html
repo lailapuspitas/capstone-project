@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doctor At Hospital</title>
-    <link rel="stylesheet" href="../public/css/doctor.css" />
+    <title>Laman Login</title>
+    <link rel="stylesheet" href="../public/css/login.css" />
     <link rel="stylesheet" href="../public/css/globalstyle.css" />
   </head>
   <body>
-    <div class="doctor" id="member">
+    <div id="login" class="laman-login">
       <!-- Start Navbar -->
       <nav class="navbar">
         <div class="nav-logo">
@@ -20,7 +20,7 @@
           <div class="dropdown">
             <a class="about" href="#">About Us</a>
             <div class="dropdown-content">
-              <a href="about-web.html">Health Care</a>
+              <a href="about-web.html">ENT Care</a>
               <a href="member.html">Member Of Group</a>
             </div>
           </div>
@@ -32,28 +32,43 @@
               <a href="doctor.html">Doctor</a>
             </div>
           </div>
-          <button type="submit" class="button">Log In / Sign In</button>
+          <!-- <button type="submit" class="button">Log In / Sign In</button> -->
         </div>
       </nav>
       <!-- End Navbar -->
 
-      <!-- Start Body Laman Member -->
-      <div class="body-doctor">
-        <div class="doctor-title">
-          Doctor <br />
-          At Health Care Hospital
-        </div>
-        <div class="doctor-container">
-          <div class="doctor-box">
-            <img class="doctor-photo" id="doctor-photo" src="" alt="" />
-            <p class="doctor-name" id="doctor-name"></p>
-            <p class="doctor-role" id="doctor-role"></p>
-            <div class="experience"><img class="doctor-exicon" src="./img/experience.png" alt=""><p id="doctor-experience"></p></div> 
-            <div class="timetable"><img class="doctor-timeicon" src="./img/timetable.png" alt=""><p id="doctor-timetable"></p></div>
+      <!-- Star Banner -->
+      <div id="banner" class="banner"></div>
+      <!-- End Banner -->
+
+      <!-- Start Konten Login -->
+      <div class="header-text">Log In</div>
+      <div class="box-form">
+        <div class="konten-kiri">
+          <div class="form-login">
+            <label class="email" for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label class="password" for="password">Password</label>
+            <input type="password" name="password" id="password" />
+            <p class="alert-pass">
+              Enter a password of 8-12 digits, numbers and letters
+            </p>
+            <button type="submit" class="button">Login</button>
+            <div class="create-acc">
+              <p>Don&#39;t have an account yet?</p>
+              <a class="to-create-acc" href="signin.html">Create Account</a>
+            </div>
           </div>
         </div>
+        <div class="konten-kanan">
+          <img
+            class="image-container"
+            alt="Login Picture"
+            title="Login Picture"
+            src="../public/img/login-pic.jpg" />
+        </div>
       </div>
-      <!-- End Body Laman doctor -->
+      <!-- End Konten Login -->
 
       <!-- Start Footer -->
       <footer class="foot-site">
@@ -68,7 +83,7 @@
           <div class="side-1">
             <div class="head-title">Quick Menu</div>
             <p class="neck-title">About Us</p>
-            <a href="about_app"><p class="body-foot">Health Care</p></a>
+            <a href="about_app"><p class="body-foot">ENT Care</p></a>
             <a href="about_member"><p class="body-foot">Member Of Group</p></a>
             <p class="neck-title">Service Fasilities</p>
             <a href="appointment"><p class="body-foot">Appointment</p></a>
@@ -115,7 +130,5 @@
       </footer>
       <!-- End Footer -->
     </div>
-
-    <script src="../public/js-frontend/doctor.js"></script>
   </body>
 </html>

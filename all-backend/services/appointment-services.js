@@ -24,7 +24,7 @@ const createAppointment = async (appointment) => {
   try {
     const mappedAppointment = {
       data: {
-        name: appointment.name, // Pastikan 'name' ada dan tidak kosong
+        name: appointment.name,
         email: appointment.email,
         date: appointment.date,
         time: appointment.time,

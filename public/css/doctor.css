@@ -88,3 +88,65 @@
   font-family: "Fira Sans", sans-serif;
   font-size: 14px;
 }
+
+.body-doctor ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* CSS untuk tampilan seluler (320px hingga 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+  .doctor-title {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  .doctor-box {
+    width: calc(50% - 20px);
+    margin: 10px 0;
+  }
+
+  .experience,
+  .timetable {
+    margin-top: 5px;
+  }
+
+  .doctor-exicon,
+  .doctor-timeicon {
+    margin-left: 10px;
+  }
+
+  #doctor-experience,
+  #doctor-timetable {
+    margin-left: 10px;
+  }
+}
+
+/* CSS untuk tampilan tablet (768px hingga 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .doctor-title {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  .doctor-box {
+    width: calc(33.33% - 20px);
+    margin: 10px 0;
+  }
+
+  .experience,
+  .timetable {
+    margin-top: 5px;
+  }
+
+  .doctor-exicon,
+  .doctor-timeicon {
+    margin-left: 10px;
+  }
+
+  #doctor-experience,
+  #doctor-timetable {
+    margin-left: 10px;
+  }
+}

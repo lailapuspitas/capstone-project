@@ -10,19 +10,19 @@
 .about-web-content {
   margin-top: 20px;
   display: flex;
-  flex-direction: column; /* Change to column to stack elements vertically */
-  align-items: center; /* Center-align the content horizontally */
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .about-web-application,
 .about-web-facilities {
-  width: 80%; /* Adjust the width of content as needed */
+  width: 80%;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0px 4px 8px #2b8e8e40;
-  margin: 10px 0; /* Add margin to separate the content vertically */
+  margin: 10px 0;
 }
 
 .border-title {
@@ -43,4 +43,54 @@
 /* footer */
 .foot-site {
   margin-top: 60px;
+}
+
+/* CSS untuk tampilan seluler (320px hingga 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+  .title-about {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+
+  .about-web-application,
+  .about-web-facilities {
+    width: 90%;
+  }
+
+  .border-title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .foot-site {
+    margin-top: 30px;
+  }
+}
+
+/* CSS untuk tampilan tablet (768px hingga 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .title-about {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+
+  .about-web-application,
+  .about-web-facilities {
+    width: 90%;
+  }
+
+  .border-title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .foot-site {
+    margin-top: 30px;
+  }
 }

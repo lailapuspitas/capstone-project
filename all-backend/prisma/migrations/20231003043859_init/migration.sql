@@ -25,7 +25,7 @@ CREATE TABLE `Appointment` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(191) NOT NULL,
     `email` VARCHAR(191) NOT NULL,
-    `date` DATE NOT NULL,
+    `date` VARCHAR(191) NOT NULL,
     `time` VARCHAR(191) NOT NULL,
     `categories` VARCHAR(191) NOT NULL,
     `complaint` VARCHAR(191) NOT NULL,
