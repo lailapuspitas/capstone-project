@@ -6,6 +6,7 @@
     <title>Laman Appointment</title>
     <link rel="stylesheet" href="../css/appointment.css" />
     <link rel="stylesheet" href="../css/globalstyle.css" />
+    <link rel="stylesheet" href="../css/ticket.css">
   </head>
   <body>
     <div class="appointment-web">
@@ -43,37 +44,59 @@
 
       <!-- start body appointment -->
       <div class="appointment-container">
-        <form class="appointment-form">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter Name" autocomplete="name">
-            <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" placeholder="Enter Email" autocomplete="email">
-            <label for="date">Date</label>
-            <input type="date" class="form-control" id="date" placeholder="Select Date">
-            <label for="time">Time</label>
-            <select class="form-control" id="time">
-                <option value="" disabled selected>Select Time</option>
-                <option value="08:00 AM">08:00 AM</option>
-                <option value="10:00 AM">10:00 AM</option>
-                <option value="03:00 PM">03:00 PM</option>
-                <option value="05:00 PM">05:00 PM</option>
-                <option value="07:00 PM">07:00 PM</option>
-            </select>
-            <label for="service">Categories</label>
-            <select class="form-control" id="service" title="symptom-categories">
-                <option value="" disabled selected>Symptom Categories</option>
-                <option value="ear">Ear Symptom</option>
-                <option value="nose">Nose Symptom</option>
-                <option value="throat">Throat Symptom</option>
-            </select>
-            <label for="complaint">Medical Complaint</label>
-            <input type="text" name="complaint" id="complaint">
-            <button class="submit-appointment" type="submit" onclick="addAppointment()">Submit</button>
-        </form>
+        <form class="appointment-form" id="appointment-form" action="">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Name" autocomplete="name">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" id="email" placeholder="Enter Email" autocomplete="email">
+          <label for="date">Date</label>
+          <input type="date" class="form-control" id="date" placeholder="Select Date" value="">
+          <label for="time">Time</label>
+          <select class="form-control" id="time">
+              <option value="" disabled selected>Select Time</option>
+              <option value="08:00 AM">08:00 AM</option>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="03:00 PM">03:00 PM</option>
+              <option value="05:00 PM">05:00 PM</option>
+              <option value="07:00 PM">07:00 PM</option>
+          </select>
+          <label for="service">Categories</label>
+          <select class="form-control" id="service" title="symptom-categories">
+              <option value="" disabled selected>Symptom Categories</option>
+              <option value="ear">Ear Symptom</option>
+              <option value="nose">Nose Symptom</option>
+              <option value="throat">Throat Symptom</option>
+          </select>
+          <label for="complaint">Medical Complaint</label>
+          <input type="text" name="complaint" id="complaint">
+          <button class="submit-appointment" type="submit" >Submit</button>
+      </form>
     </div>
 
-    <!-- Error Message -->
-    <div id="error-message" ></div>
+    <div class="title-appointment-ticket">
+      Appointment Ticket
+    </div>
+
+    <div class="appointment-ticket-container">
+      <div class="appointment-ticket-form">
+          <label for="name">Name :</label>
+          <div class="hasil" id="hasil-name"></div>
+          <label for="email">Email :</label>
+          <div class="hasil" id="hasil-email"></div>
+          <label for="date">Date :</label>
+          <div class="hasil" id="hasil-date"></div>
+          <label for="time">Time :</label>
+          <div class="hasil" id="hasil-time"></div>
+          <label for="service">Categories :</label>
+          <div class="hasil" id="hasil-symptom"></div>
+          <label for="complaint">Medical Complaint :</label>
+          <div class="hasil" id="hasil-medcomplaint"></div>
+      </div>
+  </div>
+
+  <p class="note">*NOTE</p>
+  <div class="note-ticket">After this page appears, screenshot this page as proof <br>
+    that you have registered for an appointment with a doctor</div>
 
        <!-- Start Footer -->
        <footer class="foot-site">
