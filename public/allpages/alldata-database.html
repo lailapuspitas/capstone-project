@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Laman Appointment Ticket</title>
-    <link rel="stylesheet" href="../css/ticket.css" />
+    <title>Laman All Data Appointment</title>
+    <link rel="stylesheet" href="../css/alldata-database.css" />
     <link rel="stylesheet" href="../css/globalstyle.css" />
   </head>
   <body>
@@ -32,36 +32,34 @@
               <a href="doctor.html">Doctor</a>
             </div>
           </div>
+          <a class="alldata" href="./alldata-database.html">All Data</a>
           <!-- <button type="submit" class="button">Log In / Sign In</button> -->
         </div>
       </nav>
       <!-- End Navbar -->
 
-      <div class="title-appointment-ticket">
-        Appointment Ticket
+      <div class="appointment-alldata">
+        All Data From </br> Appointment Form
       </div>
 
       <!-- start body appointment -->
-      <div class="appointment-ticket-container">
-        <div class="appointment-ticket-form">
-          <label for="name">Name :</label>
-          <div class="hasil" id="hasil-name"></div>
-          <label for="email">Email :</label>
-          <div class="hasil" id="hasil-email"></div>
-          <label for="date">Date :</label> 
-          <div class="hasil" id="hasil-date"></div>
-          <label for="time">Time :</label>
-          <div class="hasil" id="hasil-time"></div>
-          <label for="categories">Categories :</label> 
-          <div class="hasil" id="hasil-symptom"></div>
-          <label for="complaint">Medical Complaint :</label>
-          <div class="hasil" id="hasil-medcomplaint"></div>
+      <div class="appointment-table">
+        <div class="table-container">
+          <table class="table" id="table">
+            <tr class="title-table">
+              <td id="id-data">ID</td>
+              <td id="name-data">Name</td>
+              <td id="email-data">Email</td>
+              <td id="date-data">Date</td>
+              <td id="time-data">Time</td>
+              <td id="service-data">Categories</td>
+              <td id="complaint-data">Complaint</td>
+            </tr>
+          </table>
         </div>
       </div>
 
-      <p class="note">*NOTE</p>
-      <div class="note-ticket">After this page appears, screenshot this page as proof <br>
-        that you have registered for an appointment with a doctor</div>
+     
 
        <!-- Start Footer -->
        <footer class="foot-site">
@@ -125,6 +123,6 @@
     </div>
 
     <!-- Script JS -->
-    <script src="../js-frontend/appointment.js"></script>
+    <script src="../js-frontend/alldata-database.js"></script>
   </body>
 </html>

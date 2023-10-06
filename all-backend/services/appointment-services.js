@@ -1,15 +1,4 @@
-// dengan db schema.sql
-//  const {pool} = require('../config/db);
-
 const { prisma } = require("../config/prisma");
-
-// const getAllAppointment = async () => {
-//   const connection = await prisma.getConnection();
-
-//   const [member] = await connection.query("SELECT * FROM member");
-//   connection.release();
-//   return member;
-// };
 
 const getAllAppointment = async () => {
   try {

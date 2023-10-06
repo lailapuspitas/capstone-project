@@ -29,6 +29,9 @@ async function addNewAppointment() {
     if (response.status === 201) {
       const responseData = await response.json();
       displayAppointmentData(responseData.data);
+
+      // Clear the form fields
+      clearForm();
     } else {
       console.error("Failed to create appointment.");
     }
@@ -44,6 +47,16 @@ function displayAppointmentData(data) {
   document.getElementById("hasil-time").textContent = data.time;
   document.getElementById("hasil-symptom").textContent = data.categories;
   document.getElementById("hasil-medcomplaint").textContent = data.complaint;
+}
+
+// Clear the form fields
+function clearForm() {
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("date").value = "";
+  document.getElementById("time").value = "";
+  document.getElementById("service").value = "";
+  document.getElementById("complaint").value = "";
 }
 
 // Menghubungkan fungsi addNewAppointment() ke form submit

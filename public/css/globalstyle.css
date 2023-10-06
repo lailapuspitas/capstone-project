@@ -5,7 +5,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 /* Start Navbar */
@@ -20,8 +20,8 @@ body {
   background-color: #ffffff;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-color: #2b8e8ecc;
-  box-shadow: 0px 4px 8px #2b8e8e40;
+  border-color: #84b4f6;
+  box-shadow: 0px 4px 8px #1347477c;
   z-index: 1000;
 }
 
@@ -45,7 +45,7 @@ body {
   line-height: normal;
   text-decoration: none;
   margin-right: 35px;
-  color: #70cbcf;
+  color: #84b4f6;
 }
 
 .nav-kanan a:hover {
