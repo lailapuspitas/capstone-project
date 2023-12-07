@@ -14,7 +14,6 @@ CREATE TABLE `Doctor` (
     `name` VARCHAR(191) NOT NULL,
     `role` VARCHAR(191) NOT NULL,
     `experience` VARCHAR(191) NOT NULL,
-    `timetable` VARCHAR(191) NOT NULL,
     `photo` VARCHAR(191) NOT NULL,
 
     PRIMARY KEY (`id`)

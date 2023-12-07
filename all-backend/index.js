@@ -1,11 +1,6 @@
-// untuk membuat port tersembunyi di dalam file (.env)
 require("dotenv").config();
-
-////  file entry point dimana nanti server API bakal jalan
 const express = require("express");
 
-// untuk mengkoneksikan modul dengan module yang telah di buat sendiri
-// const { pool } = require("./config/db");
 const { logger } = require("./middleware/logger");
 const { memberRoute } = require("./routes/member-routes");
 const { doctorRoute } = require("./routes/doctor-routes");
@@ -25,15 +20,6 @@ app.get("/doctor", doctorRoute);
 app.get("/appointment", appointmentRoute);
 app.post("/appointment", appointmentRoute);
 
-// // Routes
-// const apiRouter = express.Router();
-// app.use("/api", apiRouter);
-
-// // /api/users
-// apiRouter.use("/member", memberRoute);
-// apiRouter.use("/doctor", doctorRoute);
-
-// Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ error: "Internal server error" });
